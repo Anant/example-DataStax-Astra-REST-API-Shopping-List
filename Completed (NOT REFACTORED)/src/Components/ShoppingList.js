@@ -21,7 +21,7 @@ class ShoppingList extends React.Component{
 
     getItems = async() => {
         try{
-            await fetch(`${process.env.REACT_APP_API_URL}/v1/keyspaces/${process.env.REACT_APP_KEYSPACE}/tables/${process.env.REACT_APP_TABLE}/rows`, {
+            fetch(`${process.env.REACT_APP_API_URL}/v1/keyspaces/${process.env.REACT_APP_KEYSPACE}/tables/${process.env.REACT_APP_TABLE}/rows`, {
                 method: 'GET',
                 headers: {
                     'X-Cassandra-Token': await getAstraToken()
@@ -45,7 +45,7 @@ class ShoppingList extends React.Component{
 
     handleDeleteItem = async(id) => {
         try{
-            await fetch(`${process.env.REACT_APP_API_URL}/v1/keyspaces/${process.env.REACT_APP_KEYSPACE}/tables/${process.env.REACT_APP_TABLE}/rows/${id}`, {
+             fetch(`${process.env.REACT_APP_API_URL}/v1/keyspaces/${process.env.REACT_APP_KEYSPACE}/tables/${process.env.REACT_APP_TABLE}/rows/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'X-Cassandra-Token': await getAstraToken()
@@ -87,7 +87,7 @@ class ShoppingList extends React.Component{
         }
 
         try{
-            await fetch(`${process.env.REACT_APP_API_URL}/v1/keyspaces/${process.env.REACT_APP_KEYSPACE}/tables/${process.env.REACT_APP_TABLE}/rows/${this.state.itemID}`, {
+            fetch(`${process.env.REACT_APP_API_URL}/v1/keyspaces/${process.env.REACT_APP_KEYSPACE}/tables/${process.env.REACT_APP_TABLE}/rows/${this.state.itemID}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json',
@@ -120,7 +120,7 @@ class ShoppingList extends React.Component{
         e.target.reset()
 
         try{
-            await fetch(`${process.env.REACT_APP_API_URL}/v1/keyspaces/${process.env.REACT_APP_KEYSPACE}/tables/${process.env.REACT_APP_TABLE}/rows`, {
+            fetch(`${process.env.REACT_APP_API_URL}/v1/keyspaces/${process.env.REACT_APP_KEYSPACE}/tables/${process.env.REACT_APP_TABLE}/rows`, {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',
