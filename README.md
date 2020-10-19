@@ -9,8 +9,9 @@ This repo contains a template and a completed (***non-refactored***) version of 
 5. Copy the REST API URL from the Connect page of your Astra Database
 6. Run `mv example.env .env`
 7. Insert credentials, REST API URL, keyspace name, and table name into the `.env` file
-8. Run `npm i`
-9. Run `npm start`
+8. Run `cd Template/`
+9. Run `npm i`
+10. Run `npm start`
 
 ## Additional Resources
 
