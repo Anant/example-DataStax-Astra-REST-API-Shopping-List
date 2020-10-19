@@ -7,9 +7,9 @@ This repo contains a template and a completed (***non-refactored***) version of 
 3. Drag-and-drop the downloaded notebook into DataStax Astra's Studio
 4. Run Cells 1-3, making sure the correct keyspace is selected
 5. Copy the REST API URL from the Connect page of your Astra Database
-6. Run `mv example.env .env`
-7. Insert credentials, REST API URL, keyspace name, and table name into the `.env` file
-8. Run `cd Template/`
+6. Run `cd Template/`
+7. Run `mv example.env .env`
+8. Insert credentials, REST API URL, keyspace name, and table name into the `.env` file
 9. Run `npm i`
 10. Run `npm start`
 
