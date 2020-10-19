@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ShoppingList from './Components/Items'
+import ShoppingList from './Components/ShoppingList'
 
 class App extends React.Component {
 

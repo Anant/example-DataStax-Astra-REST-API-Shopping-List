@@ -166,4 +166,4 @@ class ShoppingList extends React.Component{
     }
 }
 
-export default Items;
+export default ShoppingList;
