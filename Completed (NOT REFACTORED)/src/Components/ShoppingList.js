@@ -75,7 +75,6 @@ class ShoppingList extends React.Component{
         e.preventDefault()
 
         let newItemName = document.getElementById('newItemName').value
-        console.log(newItemName);
 
         let reqBody = {
             "changeset": [
@@ -96,8 +95,8 @@ class ShoppingList extends React.Component{
                 body: JSON.stringify(reqBody)
             })
             .then(res => res.json())
-            .then(await this.getItems())
-            .then(this.setState({isEditing: false}))
+            await this.getItems()
+            this.setState({isEditing: false})
         }
         catch(e){
             console.log(e)
@@ -129,7 +128,7 @@ class ShoppingList extends React.Component{
                 body: JSON.stringify(reqBody)
             })
             .then(res => res.json())
-            .then(this.getItems())
+            this.getItems()
         }
         catch(e){
             console.log(e)
