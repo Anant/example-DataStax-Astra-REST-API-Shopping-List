@@ -1,4 +1,4 @@
-This repo contains a template and a completed (***non-refactored***) version of a ***very*** basic shopping list app with **no CSS**, which uses DataStax Astra's REST API in order to do CRUD operations. This repo is strictly for demonstration purposes and may be refactored in the future to be more simplified. However for the time being, it works for our purposes in order to demonstrate DataStax Astra's REST API. 
+This repo contains a template and a completed (***non-refactored***) version of a ***very*** basic React shopping list app with **no CSS**, which uses DataStax Astra's REST API in order to do CRUD operations. This repo is strictly for demonstration purposes and may be refactored in the future to be more simplified. However for the time being, it works for our purposes in order to demonstrate DataStax Astra's REST API. 
 
 ## Getting Started
 
